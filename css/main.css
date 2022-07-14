@@ -209,6 +209,12 @@ h1, h2, h3, h4, h5, h6, p {
    background-size: cover;
 }
 
+.collection-inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
 .collection-heading {
    text-align: center;
    font-size: 50px;
@@ -218,13 +224,26 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .collection-list {
-   width: 980px;
+   padding: 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .collection-item {
+   width: 1014px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   /* justify-content: space-between; */
+}
+
+.collection-item:nth-child(2) {
+   padding-left: 120px;
+}
+
+.collection-item:nth-child(4) {
+   padding-left: 150px;
 }
 
 .collection-item:first-of-type::before {
@@ -270,23 +289,23 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .collection-item-text-wrapper {
-   width: 453px;
+   width: 390px;
 }
 
 .collection-item-text-wrapper:nth-child(1) {
-   width: 390px;
+   margin-right: 64px;
 }
 
 .collection-item-text-wrapper:nth-child(2) {
-   width: 390px;
+   margin-left: 67px;
 }
 
 .collection-item-text-wrapper:nth-child(3) {
-   width: 390px;
+   margin-right: 67px;
 }
 
 .collection-item-text-wrapper:nth-child(4) {
-   width: 410px;
+   margin-left: 117px;
 }
 
 .collection-item-title {
