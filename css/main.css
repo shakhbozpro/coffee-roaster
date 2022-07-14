@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p {
    position: absolute;
    top: 0;
    left: 0;
-   transform: translate(-40%, -40%);
+   transform: translate(-43%, -40%);
    content: "";
    display: inline-block;
    width: 160px;
