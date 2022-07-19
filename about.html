@@ -28,7 +28,7 @@
                   </li>
                   
                   <li class="header-item">
-                     <a class="header-link" href="#">Create your plan</a>
+                     <button class="header-link js-modal-open" type="button">Create your plan</button>
                   </li>
                </ul>
             </nav>
@@ -176,5 +176,29 @@
          </div>
       </div>
    </footer>
+
+   <!-- MODAL START -->
+   <div class="overlay">
+      <div class="overlay-modal">
+         <div class="modal-container">
+            <h2 class="overlay-modal-heading">order Summary</h2>
+            <p class="overlay-modal-text">
+               "I drink my coffee as <span class="overlay-modal-markeds">Filter</span>, with a <span class="overlay-modal-markeds">Decaf</span> type of bean. <span class="overlay-modal-markeds">250g</span> ground ala <span class="overlay-modal-markeds">Cafetiére</span>, sent to me <span class="overlay-modal-markeds">Every Week"</span>.
+            </p>
+            
+            <p class="overlay-modal-text-end">
+               Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
+            </p>
+            
+            <div class="overlay-modal-bottom">
+               <span class="overlay-modal-price">$14.00/ mo</span>
+               <button class="overlay-modal-btn js-modal-close" type="button">Checkout</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- MODAL FINISH -->
+
+   <script src="./js/main.js"></script>
 </body>
 </html>
