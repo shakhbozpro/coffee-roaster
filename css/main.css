@@ -104,6 +104,7 @@ button {
    width: 100%;
    background-image: url("./../images/header-bg.jpg");
    background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .header-wrapper {
@@ -150,6 +151,12 @@ button {
 }
 
 .hero {
+   background-image: url("./../images/header-bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.hero-inner {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -159,9 +166,6 @@ button {
    -webkit-box-pack: justify;
    -ms-flex-pack: justify;
    justify-content: space-between;
-   background-image: url("./../images/header-bg.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
    padding-left: 40px;
 }
 
@@ -206,9 +210,11 @@ button {
 
 .hero-img-wrapper {
    position: relative;
-   width: 640px; 
-   height: 626px;
+   width: 626px;
+   height: 580px;
    background-image: url("../images/hero-img.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .hero-img-wrapper::before {
@@ -226,6 +232,8 @@ button {
    background-repeat: no-repeat;
    background-size: contain;
 }
+
+/* ABOUT PAGE START */
 
 .about-hero-img-wrapper {
    position: relative;
@@ -249,6 +257,8 @@ button {
    background-repeat: no-repeat;
    background-size: contain;
 }
+
+/* CREATE PLAN START */
 
 .create-img-wrapper {
    position: relative;
