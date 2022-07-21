@@ -43,6 +43,7 @@ body {
    padding: 0;
    font-size: 16px;
    font-family: "Roboto", "Arial", sans-serif;
+   overflow-x: hidden;
 }
 
 .main {
@@ -264,11 +265,8 @@ only screen and (                min-resolution: 2dppx) {
    position: absolute;
    top: 0;
    left: 0;
-   -webkit-transform: translate(-43%, -40%);
-   -ms-transform: translate(-43%, -40%);
-   transform: translate(-43%, -40%);
+   
    content: "";
-   display: inline-block;
    width: 160px;
    height: 160px;
    background-image: url("./../images/hero-coin.png");
