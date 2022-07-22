@@ -143,6 +143,7 @@ button {
    text-decoration: none;
    color: var(--dark-gray);
    transition: all 0.1s ease;
+   cursor: pointer;
 }
 
 .header-link:hover {
@@ -176,6 +177,11 @@ button {
 
 .hero-text-wrapper {
    width: 464px;
+}
+
+.create-hero-text-wrapper {
+   width: 372px;
+   margin-right: 82px;
 }
 
 .hero-heading {
@@ -216,10 +222,11 @@ button {
 
 .hero-img-wrapper {
    position: relative;
-   width: 626px;
-   height: 580px;
+   width: 710px;
+   height: 596px;
+   margin-right: -20px;
    background-image: url("../images/hero-img.jpg");
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
 }
 
@@ -230,7 +237,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-
+   
    .hero-img-wrapper {
       background-image: url("./../images/hero-bg@2x.jpg");
    }
@@ -256,8 +263,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .about-hero-img-wrapper {
    position: relative;
-   width: 640px; 
-   height: 596px;
+   width: 710px; 
+   height: 592px;
    background-image: url("../images/about-bg.jpg");
 }
 
@@ -268,7 +275,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-
+   
    .about-hero-img-wrapper {
       background-image: url("../images/about-bg@2x.jpg");
    }
@@ -276,9 +283,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .about-hero-img-wrapper::before {
    position: absolute;
-   top: 0;
-   left: 0;
-   
+   top: -62px;
+   left: -68px;
    content: "";
    width: 160px;
    height: 160px;
@@ -291,8 +297,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .create-img-wrapper {
    position: relative;
-   width: 640px; 
-   height: 537px;
+   width: 710px;
+   height: 596px;
    background-image: url("../images/capucino.jpg");
    background-size: contain;
 }
@@ -493,22 +499,20 @@ only screen and (                min-resolution: 2dppx) {
 
 .collection-item:first-of-type::before {
    position: absolute;
-   top: 0;
-   left: 0;
+   top:  calc(50% - 815px);
+   left: calc(50% - 718px);
    content: "";
    width: 231px;
    height: 371px;
    background-image: url("./../images/danche.svg");
-   background-position: calc(50% - 83px) calc(50% - 10px);
    background-repeat: no-repeat;
    background-size: contain;
 }
 
 .collection-item:nth-child(2)::before {
    position: absolute;
-   top: 0;
-   right: 0;
-   transform: translate(235px, 700px);
+   top: calc(50% - 160px);
+   right: calc(50% - 867px);
    content: "";
    width: 392px;
    height: 400px;
@@ -519,9 +523,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .collection-item:nth-child(4)::before {
    position: absolute;
-   bottom: 0;
-   left: 0;
-   transform: translate(-170px, -200px);
+   bottom: calc(50% - 680px);
+   left: calc(50% - 802px);
    content: "";
    width: 316px;
    height: 269px;
@@ -954,6 +957,13 @@ only screen and (                min-resolution: 2dppx) {
    text-decoration: none;
 }
 
+.feedback-start-link-active {
+   color: #000000;
+   background-image: url("../images/create-dashed.svg");
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
 .feedback-list {
    margin-right: 100px;
 }
@@ -964,10 +974,6 @@ only screen and (                min-resolution: 2dppx) {
 
 .feedback-item:not(:last-child) {
    margin-bottom: 60px;
-}
-
-.feedback-form {
-   
 }
 
 .feedback-det {
@@ -1170,9 +1176,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .commitment-wrapper::before {
    position: absolute;
-   top: 0;
-   left: -112px;
-   transform: translateY(15%);
+   top: calc(50% - 310px);
+   left: calc(50% - 745px);
    content: "";
    width: 402px;
    height: 300px;
